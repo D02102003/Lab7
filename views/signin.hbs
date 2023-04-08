@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/login.css">
+    {{!-- Bostrap --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(43, 211, 233);">
+    <section class="container forms">
+        <div class="text-center">
+            <div class="form-content">
+                <h1>Login</h1>
+
+                <form action="/api/signin" method="post">
+                    <div class="filed input-filed" style="">
+                        <input type="text" name="username" placeholder="Username" style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+                    <div class="filed input-filed">
+                        <input type="password" name="password" placeholder="Password" style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password</a>
+                    </div><br>
+
+                    <div class="filed button-filed">
+                        <button style="width: 400px;border-radius: 10px;padding: 10px;background-color: blue;color: aliceblue;">Login</button>
+                    </div>
+                    <br>
+                    
+                    <div class="form-link">
+                        <span>Already have an account ? <a href="/signup" class="signup-link" style="color: red;">Sign Up</a> </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+    
+</html>
